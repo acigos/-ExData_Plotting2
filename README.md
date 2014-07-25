@@ -20,13 +20,37 @@ Data for Peer Assessment (https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2F
 Assignment
 ==========
 The overall goal of this assignment is to explore the National Emissions Inventory database and see what
-it say about fine particulate matter pollution in the United states over the 10­year period 1999–2008.
+it say about fine particulate matter pollution in the United states over the 10?year period 1999 to 2008.
 
 Questions
 ---------
 1. Have total emissions from PM 2.5  decreased in the United States from 1999 to 2008?
+![alt text](plot1.png)
 
+2. Have total emissions from PM 2.5  decreased in the Baltimore City, Maryland from 1999 to 2008?
+![alt text](plot2.png)
 
+3. Of the four types of sources indicated by the  type  (point, nonpoint, onroad, nonroad) variable, which
+of these four sources have seen decreases in emissions from 1999 to 2008 for Baltimore City? Which
+have seen increases in emissions from 1999 to 2008?
+![alt text](plot3.png)
 
+4.Across the United States, how have emissions from coal combustion?related sources changed from
+1999 to 2008?
+![alt text](plot4.png)
 
-2. 
+5. How have emissions from motor vehicle sources changed from 1999 to 2008 in Baltimore City?
+![alt text](plot5.png)
+
+6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle
+sources in Los Angeles County, California. Which city has seen greater
+changes over time in motor vehicle emissions ?
+![alt text](plot6.png)
+
+The motor vehicle sources was subset from the variable name "EI.Sector" from de data frame using grep("Mobile - On-Road") according to the 2011 National Emissions Inventory, version 1 Technical Support Document page 215 section 4.6 it include:
+
+        1. Mobile – On-road – Diesel Heavy Duty Vehicles
+        2. Mobile – On-road – Diesel Light Duty Vehicles
+        3. Mobile – On-road – Gasoline Heavy Duty Vehicles
+        4. Mobile – On-road – Gasoline Light Duty Vehicles
+
